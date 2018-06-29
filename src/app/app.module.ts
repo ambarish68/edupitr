@@ -11,6 +11,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactusComponent } from './contactus/contactus.component';
     AboutusComponent,
     FaqsComponent,
     ResourcesComponent,
-    ContactusComponent
+    ContactusComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     NgbModule,
