@@ -3,12 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SuccessstoriesComponent } from './successstories/successstories.component';
+import { ServicesComponent } from './services/services.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { FaqsComponent } from './faqs/faqs.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SuccessstoriesComponent,
+    ServicesComponent,
+    AboutusComponent,
+    FaqsComponent,
+    ResourcesComponent,
+    ContactusComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule
   ],
