@@ -1,6 +1,6 @@
-import { SuccessStoryModel } from "../home/successstory.model";
+import { SuccessStoryModel } from './home/successstory.model';
 //import * as data from "../../assets/data/successstories.json";
-import * as stories from "../../assets/data/successstories.json";
+import * as stories from "../assets/data/successstories.json";
 declare function require(name:string);
 
 export class SuccessStoriesService {
@@ -16,5 +16,9 @@ export class SuccessStoriesService {
                 stories.default[i].imageURL
             ))
         }
+    }
+
+    public getSuccessStories():SuccessStoryModel[]{
+        return this.successStories;
     }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SuccessStoriesService } from '../header/successstories.service';
+import { SuccessStoriesService } from '../successstories.service';
+import { SuccessStoryModel } from './successstory.model';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,15 @@ import { SuccessStoriesService } from '../header/successstories.service';
 })
 export class HomeComponent implements OnInit {
 public successStoriesService : SuccessStoriesService;
-  constructor() { }
+public successStories:SuccessStoryModel[];
+  constructor() { 
+    this.successStoriesService=new SuccessStoriesService();
+    
+  }
 
   ngOnInit() {
-    this.successStoriesService=new SuccessStoriesService();
+    console.log("ngOnInit");
+    this.successStories= this.successStoriesService.getSuccessStories();
   }
 
 }

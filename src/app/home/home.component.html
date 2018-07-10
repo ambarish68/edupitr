@@ -32,22 +32,30 @@
   </div>
   <div class="container-fluid">
     <div>
-        ALUMNI OF THESE UNIVERSITIES CAN WORK ON YOUR APPLICATION
+      ALUMNI OF THESE UNIVERSITIES CAN WORK ON YOUR APPLICATION
     </div>
     <div class="d-inline-block ">
-      <h3><img src="../../assets/images/stanford.png"></h3>
-      
+      <h3>
+        <img src="../../assets/images/stanford.png">
+      </h3>
+
     </div>
     <div class="d-inline-block ">
-        <h3><img src="../../assets/images/georgia.png"></h3>
-        
-      </div>
-      <div class="d-inline-block ">
-          <h3><img src="../../assets/images/michigan.png"></h3>
-          
-        </div>
+      <h3>
+        <img src="../../assets/images/georgia.png">
+      </h3>
+
+    </div>
     <div class="d-inline-block ">
-      <h3><img src="../../assets/images/purdue.png"></h3>
+      <h3>
+        <img src="../../assets/images/michigan.png">
+      </h3>
+
+    </div>
+    <div class="d-inline-block ">
+      <h3>
+        <img src="../../assets/images/purdue.png">
+      </h3>
     </div>
   </div>
   <div class="row justify-content-md-center">
@@ -55,7 +63,44 @@
       <img src="../../assets/images/journey.webp">
     </div>
     <div class="col-8">
-      2 of 3
+      <div id="carouselSuccessStories" class="carousel slide carousel-customjustify-content-md-center" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li *ngFor="let story of successStories; let i = index" data-target="#carouselSuccessStories" [attr.data-slide-to]="i" ngClass="i == 0 ? 'active' : ''">
+          </li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div *ngFor="let story of successStories; let i = index" [ngClass]="i == 0 ? 'carousel-item active' : 'carousel-item'">
+
+            <img src={{successStories[i].imageURL}} alt="Event Image">
+            <div>
+                <h4>
+                    {{successStories[i].name}}
+                </h4>
+            </div>
+            
+            <div>
+              <ul>
+                <li *ngFor="let admit of successStories[i].admits; let j = index">
+                  {{successStories[i].admits[j]}}
+                </li>
+              </ul>
+            </div>
+            <div>
+                {{successStories[i].feedback}}
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
     <!-- <div class="col">
       1 of 3
