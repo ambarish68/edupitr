@@ -8,13 +8,15 @@ export class SuccessStoriesService {
     public successStories:SuccessStoryModel[]=[];
 
     constructor() { 
-        for(var i=0;i<stories.default.length;i++){
-            this.successStories.push(new SuccessStoryModel(
-                stories.default[i].name,
-                stories.default[i].admits,
-                stories.default[i].feedback,
-                stories.default[i].imageURL
-            ))
+        if(this.successStories==null || this.successStories.length==0){
+            for(var i=0;i<stories.default.length;i++){
+                this.successStories.push(new SuccessStoryModel(
+                    stories.default[i].name,
+                    stories.default[i].admits,
+                    stories.default[i].feedback,
+                    stories.default[i].imageURL
+                ))
+            }
         }
     }
 

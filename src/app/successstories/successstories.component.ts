@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SuccessStoryModel } from '../home/successstory.model';
+import { SuccessStoriesService } from '../successstories.service';
 
 @Component({
   selector: 'app-successstories',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./successstories.component.css']
 })
 export class SuccessstoriesComponent implements OnInit {
-
-  constructor() { }
+  public successStoriesService : SuccessStoriesService;
+  public successStories:SuccessStoryModel[];
+  
+  constructor() { 
+    this.successStoriesService=new SuccessStoriesService();
+  }
 
   ngOnInit() {
+    this.successStories= this.successStoriesService.getSuccessStories();
+    console.log(this.successStories);
   }
 
 }
