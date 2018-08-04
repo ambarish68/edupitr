@@ -1,28 +1,37 @@
-<div class="container-fluid">
-  <div class="row">
-    <ul>
-      <li *ngFor="let story of successStories; let i = index">
-        <div class="row">
-          <div class="card border-0">
-            <div class="card-body">
-              <img src={{successStories[i].imageURL}} alt="Event Image">
-              <h5 class="card-title">{{successStories[i].name}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Admits</h6>
-              <ul>
-                <li *ngFor="let admit of successStories[i].admits; let j = index">
-                    <h6>{{successStories[i].admits[j]}}</h6>
-                </li>
-              </ul>
-              <p class="card-text">{{successStories[i].feedback}}</p>
-              <!-- <a href="#" class="card-link">Card link</a>
+<div class="container-body">
+  <div class="container-fluid">
+    <div class="row">
+      <ul>
+        <li *ngFor="let story of successStories; let i = index
+            let index = index;
+            let isOdd = odd;
+            let isEven = even" [class.story-left]="isOdd" [class.story-right]="isEven">
+          <div class="row">
+            <div class="card border-0">
+              <div class="card-body">
+                <div>
+                  <div>
+                      <img src={{successStories[i].imageURL}} alt="Event Image" class="display-inline" [class.float-left]="isOdd" [class.float-left]="isEven">
+                  </div>
+                  <h5 class="card-title">{{successStories[i].name}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Admits</h6>
+                  <ul>
+                    <li *ngFor="let admit of successStories[i].admits; let j = index">
+                      <h6>{{successStories[i].admits[j]}}</h6>
+                    </li>
+                  </ul>
+                </div>
+                <p class="card-text">{{successStories[i].feedback}}</p>
+                <!-- <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a> -->
-              <br>
-              <br>
+                <br>
+                <br>
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
 
+    </div>
   </div>
 </div>

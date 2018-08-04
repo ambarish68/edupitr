@@ -1,14 +1,14 @@
 [
     {
         "name":"Tanmay Jain",
-        "imageURL":"",
+        "imageURL":"./assets/images/tanmay_jain.webp",
         "admits":["Georgia Institute of Technology - MS Supply Chain Engineering",
             "Purdue University - MS Industrial Engineering"],
         "feedback":"First of all 'Thank you Edupitr'.\n I was in a deep trouble as managing my job and GRE/ TOEFL and university applications was a tough task. It was mid- November and my SoP was not ready.\n        One of my friend referred me to Edupitr. I went with their 'Sprint' package which prepares you in less than 10 days to submit applications. \n       The university shortlist was to the point. (4 admits out of 8) \n        My SoP was based on the sample SoPs I found online. Edupitr helped me with facts about Purdue, GA tech where I could stand out. \n        My Resume (CV) was completely revamped to match US standards.\n        The main in  Edupitr and any other service is that Edupitr's differencefirst hand experience with universities. \n        Thanks Edupitr! May the force be with you!"
     },
     {
         "name":"Akanksha Singh",
-        "imageURL":"",
+        "imageURL":"./assets/images/akanksha_singh.webp",
         "admits":["Carnegie Mellon University - Master of Information Systems Management",
             "Texas A & M University - MS MIS",
             "University of Arizona - MS MIS"],
@@ -16,14 +16,14 @@
     },
     {
         "name":"Varsha Gupta",
-        "imageURL":"",
+        "imageURL":"./assets/images/varsha_gupta.webp",
         "admits":["Purdue University - MS Chemical Engineering",
             "University of Southern California - MS Chemical Engineering"],
         "feedback":"These guys are super awesome. It was nothing less than a fortunate coincidence to come in contact with them. Their SOP and LOR reviews helped me a lot in making these docs enriching. They go out of their ways to help out people with their docs and any other admission related stuff. They charged almost nothing, and I can bet their service is better than the consultants who charge thousands of bucks just to make everything worse. And the best part about them is that they'd been through the same process, so they know it better than others. I would strongly recommend Edupiter to anyone who is planning for their Masters in the US.Way to go guys!!"
     },
     {
         "name":"Viraj Belekar",
-        "imageURL":"",
+        "imageURL":"./assets/images/viraj_belekar.webp",
         "admits":["Iowa State Univeristy - PhD Mechanical Engineering",
             "University of Massachusetts, Amherst - PhD Mechanical Engineering",
         "North Carolina State University - PhD Mechanical Engineering",
@@ -32,7 +32,7 @@
     },
     {
         "name":"Swarali Kadakuntla",
-        "imageURL":"",
+        "imageURL":"./assets/images/swarali_kadakuntla.webp",
         "admits":["Georgia Institute of Technology - MS Electrical and Computer Engineering",
             "University of Minnesota Twin Cities - MS Electrical and Electronics Engineering",
         "University of Michigan Ann Arbor - MS Electrical and Computer Engineering"],
@@ -40,7 +40,7 @@
     },
     {
         "name":"Avadhoot Kadam",
-        "imageURL":"",
+        "imageURL":"./assets/images/avadhoot_kadam.webp",
         "admits":[
             "Purdue University - MS Industrial Engineering",
             "Virginia Tech - MS Industrial Engineering",
@@ -50,7 +50,7 @@
     },
     {
         "name":"Jyoti Kumari",
-        "imageURL":"",
+        "imageURL":"./assets/images/jyoti_kumari.webp",
         "admits":[
             "Syracuse University - MS Computer Science",
             "University of Cincinnati - ME CS with $11K scholarship",
@@ -60,7 +60,7 @@
     },
     {
         "name":"Vandik Zaveri",
-        "imageURL":"",
+        "imageURL":"./assets/images/vandik_zaveri.webp",
         "admits":[
             "University of Maryland College Park with Graduate Assistantship of $24K"
         ],
@@ -68,7 +68,7 @@
     },
     {
         "name":"Soumya Barikeri",
-        "imageURL":"",
+        "imageURL":"./assets/images/soumya_barikeri.webp",
         "admits":[
             "University of Illinois at Urbana–Champaign",
             "North Carolina State University",

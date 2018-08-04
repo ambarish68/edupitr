@@ -1,0 +1,12 @@
+.container-body{
+    position: absolute;
+    top:10%;
+    left:20%;
+    width:65%;
+}
+.card{
+    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
