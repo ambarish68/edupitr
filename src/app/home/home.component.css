@@ -1,7 +1,29 @@
+.container-body{
+    position: absolute;
+    top:10%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.opaque{
+    opacity: 0.5;
+}
 .carousel-custom{
     width:100%;
+    top: 10%;
+    margin: 0 auto;
     max-height: 200px !important;
 }
 .carousel-item{
-    width:80%;
+    height: 32.13%;
+    /* width:80%; */
+}
+.align-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
