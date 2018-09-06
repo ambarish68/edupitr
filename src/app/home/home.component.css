@@ -3,10 +3,11 @@
     top:10%;
 }
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 40%;
+    width: 100%
 }
 .opaque{
     opacity: 0.5;
@@ -15,12 +16,23 @@
     width:100%;
     top: 10%;
     margin: 0 auto;
+    overflow: hidden;
     max-height: 200px !important;
+}
+img{
+    vertical-align: unset;
 }
 .carousel-item{
     height: 32.13%;
+    width: inherit;
     /* width:80%; */
 }
+
+.width-fixed{
+    width: 80%;
+    overflow: hidden;
+}
+
 .align-center{
     position: absolute;
     top: 50%;
