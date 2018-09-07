@@ -16,8 +16,8 @@
     width:100%;
     top: 10%;
     margin: 0 auto;
-    overflow: hidden;
-    max-height: 200px !important;
+    overflow: scroll;
+    /* max-height: 200px !important; */
 }
 img{
     vertical-align: unset;
@@ -38,4 +38,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.container-body{
+    margin-bottom: 10%;
 }
