@@ -1,9 +1,11 @@
-<div class="container-fluid">
-  <div class="row" *ngFor="let qa of faqs; let i = index">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{qa.question}}</h5>
-        <p class="card-text">{{qa.answer}}</p>
+<div class="container-body">
+  <div class="container-fluid">
+    <div class="row" *ngFor="let qa of faqs; let i = index">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{qa.question}}</h5>
+          <p class="card-text">{{qa.answer}}</p>
+        </div>
       </div>
     </div>
   </div>

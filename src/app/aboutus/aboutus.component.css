@@ -1,9 +1,7 @@
 .container-body{
     position: absolute;
-    top:10%;
+    top:15%;
     left:20%;
     width:65%;
-}
-.container-body{
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
