@@ -8,16 +8,14 @@ import { SuccessStoryModel } from './successstory.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-public successStoriesService : SuccessStoriesService;
-public successStories:SuccessStoryModel[];
-  constructor() { 
-    this.successStoriesService=new SuccessStoriesService();
-    
+  public successStoriesService: SuccessStoriesService;
+  public successStories: SuccessStoryModel[];
+  constructor() {
+    this.successStoriesService = new SuccessStoriesService();
   }
 
   ngOnInit() {
-    console.log("ngOnInit");
-    this.successStories= this.successStoriesService.getSuccessStories();
+    this.successStories = this.successStoriesService.getSuccessStories();
   }
 
 }
