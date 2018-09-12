@@ -1,3 +1,11 @@
 .container-body{
     margin-bottom: 10%;
+    margin-top: 15%;
+    width: 75%;
+    left: 15%;
+    position: absolute;
+}
+
+.form-control{
+    width: 75%;
 }

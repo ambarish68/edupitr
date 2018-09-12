@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +16,9 @@ import { ResourcesComponent } from './resources/resources.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AlertComponent } from './alert/alert.component';
+import { AlertService } from './alert.service';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,15 +31,18 @@ import { FooterComponent } from './footer/footer.component';
     ResourcesComponent,
     ContactusComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AlertComponent
   ],
   imports: [
     NgbModule.forRoot(),
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR})
+    FormsModule,
+    LoggerModule.forRoot({serverLoggingUrl: environment.loggingEndpoint, level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR})
   ],
-  providers: [],
+  providers: [AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

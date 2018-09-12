@@ -1,7 +1,48 @@
-<div class="container-fluid mx-auto">
+<div class="container-body">
+  <app-alert>
+    
+  </app-alert>
   <div class="row">
     <div class="col-sm">
+      <form (ngSubmit)="onSubmit()" #contactus="ngForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" id="name" required [(ngModel)]="model.name">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" class="form-control" id="subject" required [(ngModel)]="model.subject">
+        </div>
+
+        <div class="form-group">
+          <label for="serviceRequested">Service Requested</label>
+          <input type="text" name="service" [(ngModel)]="model.service" class="form-control" id="serviceRequested" required>
+        </div>
+
+        <div class="form-group">
+          <label for="emailId">Email address</label>
+          <input type="email" name="email" [(ngModel)]="model.emailId" class="form-control" id="emailId" aria-describedby="emailHelp" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="documentsToReview">Documents to review</label>
+          <input type="text" name="documents" [(ngModel)]="model.documents" class="form-control" id="documentsToReview">
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone number</label>
+          <input type="text" name="phone" [(ngModel)]="model.phoneNumber" class="form-control" id="phoneNumber">
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" class="form-control" [(ngModel)]="model.message" id="message"></textarea>
+          <label class="form-check-label" for="message">Message</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!contactus.form.valid">Submit</button>
+      </form>
     </div>
   </div>
-
 </div>
