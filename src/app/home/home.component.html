@@ -93,7 +93,7 @@
                 <div class="carousel-inner" role="listbox">
                   <div *ngFor="let story of successStories; let i = index" [ngClass]="i == 0 ? 'carousel-item active' : 'carousel-item'">
       
-                    <img src={{successStories[i].imageURL}} alt="Event Image">
+                    <img class="rounded-circle" src={{successStories[i].imageURL}} alt="Event Image">
                     <div>
                       <h4>
                         {{successStories[i].name}}
